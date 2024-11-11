@@ -49,3 +49,14 @@
     <iframe src="https://fupre.edu.ng/college-of-science-conference-workshop/" title="Time Website 3"></iframe>
     <iframe src="https://mjoghenemaega.github.io/smart-home-app/" title="Time Website 4"></iframe></body>
 </html>
+
+
+
+try:
+    print("Attempting to initialize the fingerprint sensor.")
+    f = PyFingerprint('/dev/ttyAMA0', 57600, 0xFFFFFFFF, 0x00000000)
+    print("Fingerprint sensor initialized successfully.")
+    
+    if f.verifyPassword() == False:
+        raise ValueError('The given fingerprint sensor password is wrong!')
+    print("Password verified.")
