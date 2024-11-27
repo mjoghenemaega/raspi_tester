@@ -63,6 +63,17 @@
             border: none;
         }
     </style>
+
+
+<script>
+    setTimeout(() => {
+        location.reload();
+    }, 3600000); // 3600000 milliseconds = 1 hour
+</script>
+
+
+
+
 </head>
 <body>
     <!-- Header Section -->
