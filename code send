@@ -64,37 +64,39 @@
         }
     </style>
 
-
-<script>
-    setTimeout(() => {
-        location.reload();
-    }, 3600000); // 3600000 milliseconds = 1 hour
-</script>
-
-
-
-
+    <script>
+        setTimeout(() => {
+            location.reload();
+        }, 3600000); // 3600000 milliseconds = 1 hour
+    </script>
 </head>
 <body>
     <!-- Header Section -->
-    <div id="header">INTERACTIVE DISPLAY BOARD</div>
+    <div id="header">SMART INTERACTIVE DISPLAY STATION</div>
 
     <!-- Main Content -->
     <div id="content">
         <!-- Left Partition -->
         <div class="left">
             <!-- 20% Height -->
-            <iframe src="https://fupre.edu.ng/" title="Time Website 1"></iframe>
+            <iframe src="https://time.is/" title="Time Website 1"></iframe>
             <!-- 80% Height -->
-            <iframe src="https://mjoghenemaega.github.io/smart-home-app/" title="Time Website 3"></iframe>
+            <iframe src="https://didsnieee.com.ng/" title="Time Website 3"></iframe>
         </div>
 
         <!-- Right Partition -->
         <div class="right">
             <!-- Top Half -->
-            <iframe src="https://didsnieee.com.ng/" title="Time Website 2"></iframe>
+            <iframe src="https://fupre.edu.ng/colleges/engineering-and-technology/" title="Time Website 2"></iframe>
             <!-- Bottom Half -->
-            <iframe src="https://mjoghenemaega.github.io/smart-home-app/" title="Time Website 4"></iframe>
+            <div style="text-align: center; margin: 20px;">
+                <iframe 
+                    src="https://student.fupre.edu.ng" 
+                    title="Student Portal"
+                    style="width: 100%; height: 100%; border: none;">
+                </iframe>
+                <p style="color: red;">If the student portal does not load, click <a href="https://student.fupre.edu.ng" target="_blank">here</a>.</p>
+            </div>
         </div>
     </div>
 </body>
