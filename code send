@@ -101,3 +101,85 @@
     </div>
 </body>
 </html>
+
+
+
+
+
+
+make the chrome go 
+--enable-features=KeyboardAccessibleCustomTabs
+
+
+
+intermediary.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #555;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #777;
+        }
+
+        a {
+            color: #00f;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Redirecting to Student Portal</h1>
+    <p>If you are not redirected automatically, click the button below.</p>
+    <button onclick="redirect()">Go to Student Portal</button>
+    <p style="margin-top: 40px;">
+        <strong>To return:</strong><br>
+        Press <kbd>Alt</kbd> + <kbd>←</kbd> (Back button) on the keyboard.<br>
+        Or, click the browser's back button.
+    </p>
+
+    <script>
+        function redirect() {
+            window.location.href = "https://student.fupre.edu.ng";
+        }
+
+        // Automatically redirect after 5 seconds
+        setTimeout(() => {
+            redirect();
+        }, 5000);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<p style="color: red;">
+    If the student portal does not load, click 
+    <a href="intermediary.html" target="_blank">here</a>.
+</p>
